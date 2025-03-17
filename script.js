@@ -20,3 +20,16 @@ const textElement = document.querySelector(".text");
         weightSlider.addEventListener("input", updateFont);
         widthSlider.addEventListener("input", updateFont);
         spacingSlider.addEventListener("input", updateFont);
+
+document.getElementById("textInput").addEventListener("input", function() {
+        const textInput = document.getElementById("textInput").value;
+        const dynamicText = document.getElementById("dynamicText");
+            
+        let fontSize = 5 - (textInput.length / 30); 
+        
+        if (fontSize > 10) fontSize = 10;
+        if (fontSize < 1) fontSize = 1;
+        
+        dynamicText.style.fontSize = fontSize + "rem"; // Ajusta o tamanho da fonte dinamicamente
+    });
+        

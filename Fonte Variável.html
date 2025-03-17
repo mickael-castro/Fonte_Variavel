@@ -10,14 +10,14 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="rodape">
-        <h1 class="titulo">Fonte Variável Interativa</h1>
-    </div>
+ 
+    <div class="text texto2" id="dynamicText">Texto Dinâmico</div>
 
-    <div class="text texto2">Texto Dinâmico</div>
     <div class="content-container">
-        <input type="text" id="textInput" placeholder="Digite algo...">
-        <div class="input-container">
+
+        <input type="text" id="textInput" placeholder="Digite algo..." class="text-input">
+        
+        <div class="slider-container-group">
             <div class="slider-container">
                 <label for="weight">Peso:</label>
                 <input type="range" id="weight" min="100" max="900" step="10" value="400">
